@@ -13,5 +13,7 @@ namespace EmptyMvc.Controllers
         {
             return View();
         }
+        public static void hellworld()
+        { }
     }
 }
