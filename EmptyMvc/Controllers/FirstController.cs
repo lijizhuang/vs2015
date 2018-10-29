@@ -13,7 +13,22 @@ namespace EmptyMvc.Controllers
         {
             return View();
         }
-        public static void hellworld()
-        { }
+        public ActionResult Login()
+        {
+            ViewBag.LoginState = "登录前...";
+            return View();
+        }
+        public ActionResult Register()
+        {
+            return View();
+        }
+        [HttpPost]
+        public ActionResult Login(FormCollection formCollection)
+        {
+            string email = formCollection["inputEmail3"];
+            string password = formCollection["inputPassword3"];
+            ViewBag.LoginState = email + "登录后...";
+            return View();
+        }
     }
 }
