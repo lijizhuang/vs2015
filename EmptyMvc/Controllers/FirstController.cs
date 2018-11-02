@@ -15,7 +15,7 @@ namespace EmptyMvc.Controllers
         }
         public ActionResult Login()
         {
-            ViewBag.LoginState = "登录前...";
+            ViewBag.LoginState = "登录前！...";
             return View();
         }
         public ActionResult Register()
